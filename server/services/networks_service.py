@@ -9,7 +9,7 @@ class NetworkService:
     @staticmethod
     def get_all_networks() -> List[Network]:
         yolo = Network(NetworkType.yolo, "image", "Обработка картинок YOLO", count=1,
-                       address="http://172.27.183.55:62225/predict")
+                       address="http://84.201.174.174:62225/predict")
         audio = Network(NetworkType.audio_classification, "audio", "Обработка музыки. Анализ инструментов", count=1,
                         address="http://172.27.183.55:62235/classify")
         tmp = Network(NetworkType.tmp, "*", "тест", count=0, address="http://:/")
