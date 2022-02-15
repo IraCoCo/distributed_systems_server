@@ -1,6 +1,7 @@
 from enum import Enum
 
 
-class NetworkType(Enum):
-    yolo = 1
-    audio_classification = 2
+class NetworkType(str, Enum):
+    yolo = "YOLO"
+    audio_classification = "AUDIO"
+    tmp = "TMP"

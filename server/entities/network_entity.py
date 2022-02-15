@@ -3,8 +3,9 @@ from typing import List
 
 
 class Network:
-    def __init__(self, type: NetworkType, text: str, address: List[str], count: int = 0):
+    def __init__(self, type: NetworkType, accept: str, text: str, address: str, count: int = 0):
         self.type = type
+        self.accept = accept
         self.description = text
-        self.count_instanses = count
-        self.listAddress = address
+        self.countInstanses = count
+        self.address = address
