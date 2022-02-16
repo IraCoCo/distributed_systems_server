@@ -1,5 +1,4 @@
 from .networkType_entity import NetworkType
-from typing import List
 
 
 class Network:

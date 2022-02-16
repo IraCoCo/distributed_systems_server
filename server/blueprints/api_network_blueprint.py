@@ -1,7 +1,7 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, jsonify
 from flask_cors import CORS
-from ..entities.exception_entity import NetworkNotWorkError
 from ..services.networks_service import NetworkService
+
 api_network_blueprint = Blueprint('api_networks', __name__, url_prefix='/api/networks')
 CORS(api_network_blueprint)
 
