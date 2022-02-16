@@ -1,7 +1,6 @@
 from flask import Blueprint, request, jsonify
 from ..entities.exception_entity import NetworkNotWorkError
 from ..services.networks_service import NetworkService
-
 api_network_blueprint = Blueprint('api_networks', __name__, url_prefix='/api/networks')
 
 
